@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TiketController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,11 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('homes');
-Route::get('/homes', [App\Http\Controllers\HomesController::class, 'index'])->name('homes');
+
+Route::post('/tiket', [App\Http\Controllers\HomeController::class, 'store']);
+
+// Route::get('/tiket', [App\Http\Controllers\TiketController::class, 'index']);
+Route::get('/tiket', [App\Http\Controllers\TiketController::class], 'index');
+
+Route::view('/about', 'about');
+// Route::get('/homes', [App\Http\Controllers\HomesController::class, 'index'])->name('homes');

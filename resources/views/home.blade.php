@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('styles')
+@endsection
 @section('content')
 <div class="jumbotron">
     <div class="numbertext"></div>
@@ -16,36 +17,74 @@
 </div><br><br>
 <center>
 <div class="container2">
-<form action="">
+<form action="{{ url('tiket') }}" method="post">
+  @csrf
     <h2 class="title">Buat Tiket</h2>
       <center><hr style="height:1px; width:90%; border-width:10%;background-color:#212121; opacity :1;"></center>
         <div class="user-details">
           <div class="input-box">
-            <select name="" class="form-control" require style="width: 400px;">
-              <option value="">Kota Asal</option>
+            <h5>Kota asal</h5>
+            <select name="asal" class="form-control" required style="width: 400px;">
+              <option value="Laguboti">Laguboti</option>
+              <option value="Medan">Medan</option>
+              <option value="Sibolga">Sibolga</option>
             </select>
             <i id="icon2" class="fa-solid fa-location-dot fa-2x"></i>
           </div>
           <div class="input-box">
-            <input type="datetime-local" required="" placeholder="Pilih Jadwal Keberangkatan" style="width: 400px;">
+            <h5>Jadwal Keberangkatan</h5>
+            <input type="datetime-local" name="jadwal" required placeholder="Pilih Jadwal Keberangkatan" style="width: 400px;">
             <i id="icon" class="fa-solid fa-border-all fa-2x"></i>
           </div>
           <div class="input-box">
-            <select name="" class="form-control" require style="width: 400px;">
-              <option value="">Kota Tujuan</option>
+            <h5>Kota Tujuan</h5>
+            <select name="tujuan" class="form-control" required style="width: 400px;">
+              <option value="Laguboti">Laguboti</option>
+              <option value="Medan">Medan</option>
+              <option value="Sibolga">Sibolga</option>
             </select>
             <i id="icon2" class="fa-solid fa-location-dot fa-2x"></i>
           </div>
           <div class="input-box">
-            <select name="" class="form-control" require style="width: 400px;">
-              <option value="">Tipe Mobil</option>
+            <h5>Tipe Mobil</h5>
+            <select name="jenismobil" class="form-control" required style="width: 400px;">
+              <option value="Mitsubishi L-300">Mitsubishi L-300</option>
+              <option value="Mini Van Toyota">Mini Van Toyota</option>
+              <option value="Mercedez Benz Sprinter">Mercedez Benz Sprinter</option>
+            </select>
+            <i id="icon2" class="fa-solid fa-border-all fa-2x"></i>
+          </div>
+          <div class="input-box">
+            <h5>Nomor Bangku</h5>
+            <select name="bangku" class="form-control" required style="width: 400px;">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+            <i id="icon2" class="fa-solid fa-border-all fa-2x"></i>
+          </div>
+          <div class="input-box">
+            <h5>Kontak</h5>
+            <select name="kontak" class="form-control" style="width: 400px;">
+              <option value="082166368282">Supir Laguboti-Medan</option>
+              <option value="081244339909">Supir Laguboti-Sibolga</option>
             </select>
             <i id="icon2" class="fa-solid fa-border-all fa-2x"></i>
           </div>
        </div>
-    <div class="button">
-      <input id="pencet" type="submit" value="pesan">
-    </div>
+      <button id="pencet" type="submit">Pesan</button>
 </form>	
 </div>				 
 </center>

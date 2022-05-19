@@ -167,23 +167,19 @@ form .user-details .input-box{
     padding-left: 5rem;
     padding-top: 1rem;
 }
-form .button{
+form button {
     height: 45px;
     margin: 20px 0;
     margin-left: 17rem;
-}
-form .button input{
-    height: 100%;
-    width: 15%;
-    outline: none;
-    color: #fff;
-    border: none;
     background-color: #0B094B;
+    color: white;
     font-size: 18px;
     border-radius: 10px;
     letter-spacing: 1px;
-
+    outline: none;
+    border: none;
 }
+
 #icon{
     position: absolute;
     padding-top: 5px;

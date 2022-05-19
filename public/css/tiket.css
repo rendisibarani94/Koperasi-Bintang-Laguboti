@@ -1,0 +1,68 @@
+.tiket {
+    border: 2px solid black;
+    border-radius: 25px ;
+    padding: 50px;
+}
+
+/* .tiket:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    Left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url('images/KBL.png');
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 80%;
+} */
+
+hr{
+    border: 1px solid black;
+}
+
+.fieldTiket {
+    height:66px;
+    border:1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.upload {
+    border: 2px solid black;
+    border-radius: 25px ;
+    padding: 50px 50px 50px 50px;
+}
+.upload button {
+    margin: 0;
+    padding: 0;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* input[type="file"] {
+    display: none;
+} */
+/* .custom-file-upload {
+    border: 1px solid rgb(0, 0, 0);
+    width: 231px;
+    height: 71px;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: #0B094B;
+    
+} */
+/* .upload p {
+    color: white;
+    padding-top: 12px;
+    font-size: 20;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */

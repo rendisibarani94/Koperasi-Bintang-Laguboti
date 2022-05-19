@@ -23,8 +23,8 @@
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
                         <li><a href="#">Account</a></li>
 
                     </ul>
